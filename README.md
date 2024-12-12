@@ -1,4 +1,4 @@
-# Fridge-to-Feast
+# Fridge-to-Feast  https://fridge-to-feast-psi.vercel.app/
 # Fridge to Feast
 
 Fridge to Feast is a dynamic recipe suggestion application that helps users discover dishes they can make with the ingredients available in their fridge. The application prioritizes Indian cuisine but supports a variety of cuisines worldwide. Users can input ingredients, and the app dynamically fetches and displays recipes with preparation steps, cooking time, and match percentages.
