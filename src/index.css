@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .recipe-card {
+    @apply transform transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+  
+  .ingredient-tag {
+    @apply px-3 py-1 rounded-full text-sm font-medium transition-colors;
+  }
+  
+  .button-primary {
+    @apply bg-emerald-500 hover:bg-emerald-600 text-white transition-colors duration-200;
+  }
+  
+  .input-primary {
+    @apply border-gray-300 focus:border-emerald-500 focus:ring-emerald-500;
+  }
+}
+
+/* Lottie animations in dark mode */
+.lottie-container svg * {
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.dark .lottie-container svg path[fill="#000000"],
+.dark .lottie-container svg path[fill="#000"],
+.dark .lottie-container svg path[fill="rgb(0,0,0)"],
+.dark .lottie-container svg rect[fill="#000000"],
+.dark .lottie-container svg rect[fill="#000"],
+.dark .lottie-container svg rect[fill="rgb(0,0,0)"] {
+  fill: #ffffff !important;
+}
+
+.dark .lottie-container svg path[stroke="#000000"],
+.dark .lottie-container svg path[stroke="#000"],
+.dark .lottie-container svg path[stroke="rgb(0,0,0)"],
+.dark .lottie-container svg rect[stroke="#000000"],
+.dark .lottie-container svg rect[stroke="#000"],
+.dark .lottie-container svg rect[stroke="rgb(0,0,0)"] {
+  stroke: #ffffff !important;
+}
+
+/* Invert Lottie colors in dark mode */
+.invert {
+  filter: invert(1) brightness(100%);
+}
+
+/* Rest of your existing styles... */
